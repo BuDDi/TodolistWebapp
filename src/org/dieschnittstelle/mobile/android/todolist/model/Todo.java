@@ -160,19 +160,8 @@ public class Todo implements Serializable {
 
 	@Override
 	public String toString() {
-		return "{Todo " + this.id + " " + this.userId + " " + this.name + ", "
-				+ this.description + "}";
+		return "{Todo id:" + this.id + " userId:" + this.userId + " name:\""
+				+ this.name + "\" \"" + this.description + "\" done:" + this.done
+				+ " prio:\"" + this.priority + "\"}";
 	}
-
-	// private static class TodoDeserializer extends JsonDeserializer<Todo> {
-	//
-	// @Override
-	// public Todo deserialize(JsonParser arg0, DeserializationContext arg1)
-	// throws IOException, JsonProcessingException {
-	// // TODO Auto-generated method stub
-	// return null;
-	// }
-	//
-	// }
-
 }
